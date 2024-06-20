@@ -1,0 +1,159 @@
+body{
+  font-family: 'roboto';
+  background-color: rgb(250, 220, 225);
+}
+.body-grid{
+  
+  max-width: 500px;
+  margin:60px auto 0px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+
+}
+.friend-header{
+  margin:15px 20px;
+}
+
+.name-container{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.name-container img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 30px;
+  padding:auto 0px;
+  background: pink;
+  margin-bottom: 10px;
+  
+}
+.friend-name{
+  flex: 1;
+  margin: 0px;
+}
+.friend-name p{
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.date{
+  font-size: 13px;
+  color: grey;
+}
+#friend-icon{
+  font-size: 5px;
+}
+.friend-image img{
+  width: 100%;
+  height: 400px;
+
+  object-fit: cover;
+}
+.header{
+  display: flex;
+  padding: 10px 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: black;
+}
+.left-header{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 10px;
+  align-items: center;
+}
+.left-header img{
+  width: 40px;
+  object-fit: cover;
+  background: pink;
+  border-radius: 30px;
+}
+.input-div{
+  flex: 1;
+  position: relative;
+  margin:0px 10px;
+  display: flex;
+}
+.input-div input{
+  flex:1;
+  max-width: 350px;
+  height: 30px;
+  padding-left:30px ;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+
+
+}
+.input-div i{
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  font-size: 14px;
+  color: grey;
+}
+.middle-header{
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.middle-header i{
+  width: auto;
+  color: rgb(250, 176, 188);
+  font-size: 20px;
+}
+.right-header{
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  align-items: center;
+  margin: 0px 10px;
+  column-gap: 20px;
+  
+}
+.welcome-text{
+  text-align: end;
+}
+.your-profile-container img{
+  width: 100%;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: pink;
+
+}
+.menu-icon{
+  display: none;
+}
+.inside-welcome-text{
+  font-weight: bold;
+}
+@media (max-width:600px) {
+  .menu-icon{
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    
+  }
+  .header{
+    display: flex;
+    flex-direction: row;
+  }
+  .middle-header{
+    display: none;
+
+  }
+
+  .right-header{
+    display: none;
+  }
+}

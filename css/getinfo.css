@@ -1,0 +1,31 @@
+.body{
+  background-color: pink;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.input-group div{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: 20px;
+  align-items: center;
+}
+.input-group input{
+  border:1px solid rgb(247, 200, 208);
+  height: 30px;
+  border-radius: 10px;
+}
+.image{
+  text-align: center;
+  width: 100px;
+
+  display: inline-block;
+}
+.image img{
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.confirm-butt{
+  margin-top: 15px;
+}
